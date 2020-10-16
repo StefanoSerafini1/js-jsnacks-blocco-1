@@ -73,3 +73,18 @@ if (checknome === true) {
   console.log('non sei invitato alla festa il tuo nome non risulta nella lista ' + nome);
   document.getElementById('nome').innerHTML = 'non sei invitato alla festa il tuo nome non risulta nella lista  ' + nome;
 }
+
+//es 5 array vuoto chiedere sei numeri e inserire nel array solo i dispari
+
+var number=[];
+
+for (var i = 0; i < 6; i++) {
+
+ var val=parseInt(prompt('inserisci un numero'));
+
+ if(val % 2 != 0){
+   number.push(val);
+ }
+
+}
+console.log(number);
